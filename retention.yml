@@ -1,0 +1,17 @@
+policy_version: 1
+reviewed: 2026-10-12
+data_classes:
+  - name: connection-security-events
+    purpose: abuse investigation and service security
+    retention_days: 30
+    owner: security-operations
+    contains_direct_identifiers: true
+  - name: aggregate-performance-metrics
+    purpose: capacity planning
+    retention_days: 180
+    owner: platform-operations
+    contains_direct_identifiers: false
+  - name: player-chat
+    collected_by_default: false
+    retention_days: 0
+    owner: service-owner
